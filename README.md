@@ -1,6 +1,6 @@
-# F1 Api Overview
+# F1 API Overview
 
-Api Route : ``` /api/v1/ ```
+API Route : ``` /api/v1/ ```
 
 Description: Returns json object
 
