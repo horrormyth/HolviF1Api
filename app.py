@@ -14,9 +14,9 @@ drivers_dat = os.path.join(DATA_DIR,'drivers.json')
 teams_data = os.path.join(DATA_DIR,'teams.json')
 
 
-def json_loader(path,charset='utf-8'):
+def json_loader(path):
     with open(path) as file:
-        json_data =json.load(file,encoding='utf-8')
+        json_data =json.load(file)
     return json_data
 
 # Load Datas
