@@ -103,8 +103,8 @@ def race_getter(number):
         return results[0]
 
 # Usable Method for driver list
-def driver_lists():
-    return drivers_data
+# def driver_lists():
+#     return drivers_data
 
 
 # As a race managers we want to be able to post completed race results -- Done
