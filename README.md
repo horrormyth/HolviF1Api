@@ -17,7 +17,7 @@ Api Route : ``` /api/v1/ ```
 
 ## Instruction
 -   Clone the repo
--   Create virtualen in the cloned project folder and name it :``` env ``` as below
+-   Create virtualenv in the cloned project folder and name it :``` env ``` as below
 -   ``` virtualenv env ```
 -   Acitvate the virutal environment
 -   ``` source env/bin/activate```
@@ -77,7 +77,7 @@ Create new races object
 ### GET driver_country/country
 | Type     | Name | Description |Schema|Response|Status|
 | :------- | ----: | :---: | :---: | :---: | :---: |
-| **Query** | **coutnry**<br >required| Drivers by Country Name|DriverByCountry,**string**|200|Okay|
+| **Query** | **country**<br >required| Drivers by Country Name|DriverByCountry,**string**|200|Okay|
 
 
 ### GET /drivers/tname
