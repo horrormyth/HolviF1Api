@@ -47,6 +47,8 @@ Description: Returns json object
 | Teams List                                                | /api/v1/teams                            | None   |
 | All Races                                                 | /api/v1/races                            | None   |
 
+# Requests
+
 ### POST /races
 #### Description
 Create new races object
