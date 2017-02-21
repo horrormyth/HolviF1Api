@@ -252,5 +252,3 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 
-
-# TODO we want to be able to get specific race result
