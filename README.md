@@ -30,6 +30,21 @@ Api Route : ``` /api/v1/ ```
 
 
 ## Paths
+
+## Path Definitions
+
+| Description                                               | Path                                     | Type   |
+|-----------------------------------------------------------|------------------------------------------|--------|
+| Drivers By Team Name                                      | /api/v1/drivers/<parameter>              | string |
+| Drivers By Team Id                                        | /api/v1/drivers/<parameter>              | int    |
+| Drivers By Country                                        | /api/v1/driver_country/<parameter>       | string |
+| Race By Number and Driver Standings of that specific race | /api/v1/races/<parameter>                | int    |
+| Team Standings                                            | /api/v1/races/<parameter>/team_standings | int    |
+| Teams By Country                                          | /api/v1/teams/<parameter>                | string |
+| Drivers List                                              | /api/v1/drivers                          | None   |
+| Teams List                                                | /api/v1/teams                            | None   |
+| All Races                                                 | /api/v1/races                            | None   |
+
 ### POST /races
 #### Description
 Create new races object
@@ -89,3 +104,4 @@ Create new races object
 
 
 ## Note : Code could be better
+
