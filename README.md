@@ -2,6 +2,8 @@
 
 Api Route : ``` /api/v1/ ```
 
+Description: Returns json object
+
 ## Version
 *v1*
 
