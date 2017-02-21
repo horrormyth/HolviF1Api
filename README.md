@@ -25,6 +25,8 @@ Api Route : ``` /api/v1/ ```
 -   ``` pip install -r requirements.txt```
 -   Run App
 -   ``` python app.py ```
+-   Browse it by entering. E.G ```localhost:500/api/v1/races ``` **'races'** being endpoint name
+-   For endpoints, follow the Paths -> Parameter Sections
 
 
 ## Paths
