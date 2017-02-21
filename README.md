@@ -74,7 +74,7 @@ Create new races object
 ### GET /drivers/id
 | Type     | Name | Description |Schema|Response|Status|
 | :------- | ----: | :---: | :---: | :---: | :---: |
-| **Query** | **id **<br>required| Drivers by Team Id |DriversByTeamId ,<br>**int**|200|Okay|
+| **Query** | **id**<br>required| Drivers by Team Id |DriversByTeamId ,<br>**int**|200|Okay|
 
 ### GET driver_country/country
 | Type     | Name | Description |Schema|Response|Status|
