@@ -33,18 +33,18 @@ Create new races object
 
 | Type     | Name | Description |Schema|Response|Status|
 | :------- | ----: | :---: || :---: || :---: || :---: |
-| **json** | **races **<br>*required*| New Race|Races|200|Okay
+| **json** | **races **<br>*required*| New Race|Races|200|Okay|
 
 ### GET /races
 
 | Type     | Name | Description |Schema|Response|Status|
 | :------- | ----: | :---: || :---: || :---: || :---: |
-| **Query** | **name **<br>*optional*| Get All Races|Races|200|Okay
+| **Query** | **name **<br>*optional*| Get All Races|Races|200|Okay|
 
 ### GET /races/number
 | Type     | Name | Description |Schema|Response|Status|
 | :------- | ----: | :---: || :---: || :---: || :---: |
-| **Query** | **number **<br>*required*| Specific Race results and Driver Standings| **int32**|200|Okay
+| **Query** | **number **<br>*required*| Specific Race results and Driver Standings| **int32**|200|Okay|
 
 ### GET /races/number/team_standings
 | Type     | Name | Description |Schema|Response|Status|
@@ -54,34 +54,31 @@ Create new races object
 ### GET /teams
 | Type     | Name | Description |Schema|Response|Status|
 | :------- | ----: | :---: || :---: || :---: || :---: |
-| **Query** | **None **| Team List|Teams|200|Okay
+| **Query** | **None **| Team List|Teams|200|Okay|
 
 ### GET /teams/country
 | Type     | Name | Description |Schema|Response|Status|
 | :------- | ----: | :---: || :---: || :---: || :---: |
-| **Query** | **country **<br>*required*| Teams by country|Teams,<br> **string**|200|Okay
+| **Query** | **country **<br>*required*| Teams by country|Teams,<br> **string**|200|Okay|
 
 ### GET /drivers
 
 | Type     | Name | Description |Schema|Response|Status|
 | :------- | ----: | :---: || :---: || :---: || :---: |
-| **Query** | **None **| Driver List|DriverList|200|Okay
+| **Query** | **None **| Driver List|DriverList|200|Okay|
 
 ### GET /drivers/id
 | Type     | Name | Description |Schema|Response|Status|
 | :------- | ----: | :---: || :---: || :---: || :---: |
-| **Query** | **id **<br>required| Drivers by Team Id |DriversByTeamId ,<br>**int**|200|Okay
+| **Query** | **id **<br>required| Drivers by Team Id |DriversByTeamId ,<br>**int**|200|Okay|
 
 ### GET driver_country/country
 | Type     | Name | Description |Schema|Response|Status|
 | :------- | ----: | :---: || :---: || :---: || :---: |
-| **Query** | **coutnry **<br >required| Drivers by Country Name|DriverByCountry,**string**|200|Okay
+| **Query** | **coutnry **<br >required| Drivers by Country Name|DriverByCountry,**string**|200|Okay|
 
 
 ### GET /drivers/tname
 | Type     | Name | Description |Schema|Response|Status|
 | :------- | ----: | :---: || :---: || :---: || :---: |
-| **Query** | **tname **<br> required|Driver By TeamName|DriverByTeamName,<br>**string**|200|Okay
-
-
-
+| **Query** | **tname **<br> required|Driver By TeamName|DriverByTeamName,<br>**string**|200|Okay|
