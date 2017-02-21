@@ -37,7 +37,7 @@ Description: Returns json object
 
 ## Path Definitions
 
-| Description                                               | Path                                     | Type   |
+| Description                                               | Path                                     | parameter Type   |
 |-----------------------------------------------------------|------------------------------------------|--------|
 | Drivers By Team Name                                      | /api/v1/drivers/< parameter >              | string |
 | Drivers By Team Id                                        | /api/v1/drivers/< parameter >              | int    |
