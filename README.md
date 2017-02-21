@@ -110,5 +110,8 @@ Create new races object
 
 
 ***Datas in data Folder***
-## Note : Code could be better
-## This was done with minimal experience with Flask and Flask Restful
+## Note :
+#####Code could be better
+#####This was done with minimal experience with Flask and Flask Restful
+**End Note - ``` while(!(succeed == try()))```**
+
