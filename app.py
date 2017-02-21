@@ -92,15 +92,16 @@ def get_race_args():
 
 # Usable Method for race reuslts based on nunber
 def race_getter(number):
-        results = [race for race in races if race['number'] == number]
-        if len(results) == 0:
-            abort(404, message={'Race number %d' % number: 'does not exist'})
-        else:
-            for result in results:
-                sorted_by_points = sorted(result['drivers'], key=lambda k: k['point'])
-                results[0]['drivers'] = sorted_by_points
+    results = [race for race in races if race['number'] == number]
+    if len(results) == 0:
+        abort(404, message={'Race number %d' % number: 'does not exist'})
+    else:
+        for result in results:
+            sorted_by_points = sorted(result['drivers'], key=lambda k: k['point'])
+            results[0]['drivers'] = sorted_by_points
 
-            return results[0]
+        return results[0]
+
 # Usable Method for driver list
 def driver_lists():
     return drivers_data
