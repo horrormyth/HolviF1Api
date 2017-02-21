@@ -23,7 +23,9 @@ def json_loader(path,charset='utf-8'):
 drivers_data =json_loader(drivers_dat)
 teams_data = json_loader(teams_data)
 
-# avoid it doing the request
+
+# List of drivers for avoiding malformed requests
+# (wish i could have done this for all for teams as well -- Todo)
 LIST_OF_DRIVERS = [driver['driver'] for driver in drivers_data]
 
 
