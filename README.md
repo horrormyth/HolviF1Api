@@ -8,13 +8,15 @@ Description: Returns json object
 *v1*
 
 ## Dependencies
--   Flask==0.10.1
--   Flask-RESTful==0.3.1
--   Jinja2==2.7.3
--   MarkupSafe==0.23
--   Werkzeug==0.9.6
--   itsdangerous==0.24
--   six==1.9.0
+-   Python 3
+-   Packages
+    -   Flask==0.10.1
+    -   Flask-RESTful==0.3.1
+    -   Jinja2==2.7.3
+    -   MarkupSafe==0.23
+    -   Werkzeug==0.9.6
+    -   itsdangerous==0.24
+    -   six==1.9.0
 
 
 ## Instruction
