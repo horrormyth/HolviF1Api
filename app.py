@@ -194,12 +194,12 @@ class DriversByTeamName(Resource):
         driverlist = [driver for driver in drivers_data if driver['team'] == team_ids[0]]
         return jsonify({tname: driverlist})
 
-# Teams only
+# Teams only  -- Done
 class Teams(Resource):
     def get(self):
         return jsonify({'teams':teams_data})
 
-# Team Standings ()
+# Team Standings  by Race Number -- Done
 class TeamStandings(Resource):
     def get(self,number):
         selected_race=race_getter(number)
@@ -219,15 +219,15 @@ class TeamStandings(Resource):
 
         return jsonify({'team_standings':sorted_standings})
 
+# Team by Country -- Done
 class TeamByCountry(Resource):
     def get(self,country):
         driver_ids = [driver['team'] for driver in drivers_data if driver['country'] == country]
         if len(driver_ids) == 0:
             abort(404, message={'Somebody overtook the country %s' % country: 'does not exist !!'})
-        team_list = [team for team in teams_data if team['id'] == driver_ids[0]]
+        team_list = [team for team in teams_data if team['id'] in driver_ids]
 
         return jsonify({country:team_list})
-
 
 
 
