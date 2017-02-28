@@ -206,11 +206,7 @@ class Teams(Resource):
 class TeamStandings(Resource):
     def get(self,number):
         selected_race=race_getter(number)
-        drivers_team=[]
-        for driverid in drivers_data:
-            for team in teams_data:
-                if team['id'] == driverid['team']:
-                    drivers_team.append(team['team'])
+        drivers_team = [team['team'] for team in teams_data for driver in drivers_data if team['id'] == driver['team']]
         updated_drivers = [dict(key, team=value) for key, value in zip(selected_race['drivers'], drivers_team)]
         defdict = defaultdict(int)
 
